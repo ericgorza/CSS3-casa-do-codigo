@@ -662,5 +662,35 @@ td a {
 } */
 
 /* ELEMENTOS FLEXIVEIS UTILIZANDO FLEXBOX */
+/* nesse caso, ocupara um espaco de 300px e dividira os boxes nesse espaco */
 
+/* .flexbox {
+    display: flex;
+    height: 60px;
+    width: 300px;
+}
+
+.box {
+    color: #fff;
+    display: block;
+    flex: auto;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.one {
+    background-color: #8820dd;
+}
+
+.two {
+    background-color: #2bb15a;
+}
+
+.three {
+    background-color: #755322;
+} */
+
+/* MELHORANDO SEUS FORMULARIOS */
 
