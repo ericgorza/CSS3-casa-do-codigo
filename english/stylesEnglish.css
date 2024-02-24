@@ -1,0 +1,932 @@
+* {
+    /* box-sizing: border-box; */
+    margin-left: 10px;
+}
+
+/* .box {
+    background-color: yellow;
+    width: 300px;
+}
+
+.paddingbox {
+    background-color: blue;
+    width: 300px;
+}
+
+section {
+    border: 1px solid #000;
+    height: 100px;
+    margin: 40px auto;
+    width: 400px;
+} */
+
+/* The left and top properties move the mini box to the exact position we want to paint */
+
+/* .h1-ba {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #990000;
+    color: #fff;
+    left: -10px;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    width: 420px;
+}
+
+.h1-ba::before {
+    border-color: transparent #7c0000 #7c0000 transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: -10px;
+}
+
+.h1-ba::after {
+    border-color: transparent transparent #7c0000 #7c0000;
+    border-style: solid;
+    border-width: 5px;
+    content: '';
+    right: 0;
+    position: absolute;
+    top: -10px;
+} */
+
+/* Decorating messages */
+/* Before and after allow you to add elements before and after the decorated element without altering the HTML code */
+
+/* 
+.help {
+    background-color: #f1efe6;
+    border: 1px solid #d3cdae;
+    font-size: 0.9em;
+    padding: 10px;
+    position: relative;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.help::before {
+    border-color: transparent #d3cdae transparent transparent;
+    border-style: solid;
+    border-width: 14px;
+    content: '';
+    left: -28px;
+    margin-top: -14px;
+    position: absolute;
+    top: 50%;
+}
+
+.tip {
+    font-size: 30px;
+}
+.tip::before {
+    content: '\261e';
+    margin-right: 5px;
+} */
+
+/* Creating quotation marks in a blockquote */
+
+/* blockquote {
+    color: #444;
+    font-style: italic;
+}
+
+blockquote::before, blockquote::after {
+    color: #000;
+    font-size: 3em;
+}
+
+blockquote::before {
+    content: '\201c';
+}
+
+blockquote::after {
+    content: '\201d';
+} */
+
+/* OOCSS */
+
+/* .button {
+    background-color: #999999;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: #389739;
+}
+
+.big-button {
+    font-size: 1.1em;
+}
+
+.small-button {
+    font-size: 0.8em;
+    background-color: #444;
+} */
+
+/* Print styles */
+
+/* Important to reset some settings and use !important to override others in the importance chain. */
+
+/* @media print {
+    * {
+        background: transparent !important;
+        border-color: #000 !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        text-shadow: none !important;
+    } */
+
+    /* Links should be underlined */
+
+    /*
+    a {
+        text-decoration: underline !important;
+    } */
+
+    /* Place the URL after the link */
+
+    /*
+    a[href]::after {
+        content: ' ('attr(href)')';
+    } */
+
+    /* Remove the pseudo-element */
+
+    /*
+    a[href^='javascript:']::after, a[href^='#'] {
+        content: '';
+    }
+} */
+
+
+/* Controlling page breaks */
+
+/* We can use page-break, page-break-inside, and page-break-before to allow or prevent page breaks. */
+
+/* Printing tables */
+
+/* table {
+    width: 500px;
+}
+
+td {
+    border: 1px dotted #666;
+}
+
+td a {
+    color: #3b5998;
+}
+
+.expense, .profit, .actions {
+    text-align: right;
+}
+
+.expense {color: red;}
+.profit {color: green;}
+
+.actions a {
+    font-size: 0.9em;
+    color: white;
+    padding: 2px 5px;
+    background-color: #3b5998;
+    text-decoration: none;
+} */
+
+/* WHAT CAN YOU DO WITH CSS3? */
+
+/* Font face allows us to load a new font */
+
+/* @font-face {
+    font-family: 'Lobster';
+    font-weight: 700;
+    src: local('Lobster'), url(lobster.woff) format('woff');
+} */
+
+/* Argument 1 - font Argument 2 - backup font */
+/* .fontface {
+    font-family: 'Lobster', cursive;
+} */
+
+/* FONT DISTRIBUTION SERVICES */
+
+/* .distribuicao {
+    font-family: 'Press Start 2P', cursive;
+} */
+
+/* Icon substitution with fonts */
+
+/* Pictos, font awesome, iconic, fontello, iicomoon, shiticons */
+/* First, download the font package */
+/* Define the font you want to use */
+
+/* @font-face {
+    font-family: 'IconFill';
+    src: url('iconfill.woff') format('woff');
+} */
+
+/* Creating a cloud using CSS */
+
+/* .cloudDiv {
+    background-color: #000;
+    width: 50px;
+    height: 10px;
+    padding: 50px 100px;
+} */
+
+/* .cloud {
+    background-color: white;
+    border-radius: 48px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 48px;
+}
+
+.cloud::before,
+.cloud::after {
+    background-color: white;
+    border-radius: 50%;
+    content: '';
+    height: 16px;
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    top: -6px;
+}
+
+.cloud::after {
+    background-color: white;
+    border-radius: 50%;
+    content: '';
+    height: 11px;
+    position: absolute;
+    width: 10px;
+    left: 26px;
+    top: -4px;
+} */
+
+/* Gradient color list */
+
+/* .listbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 32rem;
+    height: 40px;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ccc;
+    color: white;
+    list-style: none;
+    text-align: center;
+} */
+
+/* .lista {
+    width: 8rem;
+    margin: 0;
+    text-align: center;
+    color: black;
+    line-height: 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.lista:last-child {
+    border-right: none;
+} */
+
+/* Gradient colors [direction][start color][end color] */
+
+/* .gradiente1 {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #4377fa, #0537b7);
+}
+
+.gradiente2 {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #0537b7, #4377fa);
+}
+
+.gradiente3 {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #fc0050, #ff79a3);
+}
+
+.gradiente4 {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom left, #f5b951 48%, #f2a31c 56%);
+} */
+
+/* Elegant shadows and menus */
+
+/* .help1 {
+    box-shadow: 3px 3px 3px #aaa;
+}
+
+.help2 {
+    box-shadow: -3px -3px 3px #aaa;
+} */
+
+/* Inner shadow */
+/* .help3 {
+    box-shadow: 3px 3px 3px #aaa inset;
+} */
+
+/* Brightness around 0 0 */
+/* .inputsombra {
+    width: 30rem;
+    height: 10rem;
+    margin-bottom: 4rem;
+}
+
+.inputsombra:focus {
+    box-shadow: 0 0 5px #35861b;
+    outline: none;
+} */
+
+/* Navigation with shadow effects */
+/* We can put effects on text using the same principle but with text-shadow */
+
+/* .nav {
+    background-color: #b9522d;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 5rem;
+    list-style: none;
+    width: 18rem;
+    padding: 0;
+}
+
+.nav li {
+    font-weight: bold;
+    height: 5rem;
+    line-height: 5rem;
+    width: 6rem;
+    margin: 0;
+}
+
+.nav a {
+    color: white;
+}
+
+.nav li:hover {
+    background-color: #a64a28;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+} */
+
+/* Combining everything in an article section */
+
+/* .book {
+    margin-top: 7rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    max-width: 60rem;
+    height: 12rem;
+    padding: 10px 10px;
+    background-color: #fafafa;
+    background-image: linear-gradient(#fafafa, #eee);
+}
+
+.book header {}
+
+.bookh1 {
+    color: #bd2c00;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.bookh2 {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.available {
+    background-color: #6cc644;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 7px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.bookUl {
+    background-color: #56b4ef;
+    background-image: linear-gradient(to bottom, #56b4ef, #148eda);
+    float: left;
+    list-style: none;
+    margin: 25px 10px 0 0;
+    padding: 0;
+    text-align: left;
+}
+
+@font-face {
+    font-family: 'IconicFill';
+    src: url('iconic_fill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon::before {
+    font-family: 'IconicFill';
+    margin: 0px 5px;
+}
+
+.paper::before {
+    content: '\e00b';
+}
+
+.digital::before {
+    content: '\e044';
+}
+
+.package::before {
+    content: '\e022';
+}
+
+.icon {
+    color: #fff;
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+}
+
+.icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+/* BOOK LIST AND STYLES */
+/* .bookLi {
+    margin: 0;
+}
+
+.bookLi a {
+    margin: 0;
+}
+
+.book p {
+    /* Your book paragraph styles here */
+/*
+
+/* CLEARFIX */
+/* .clear {
+    clear: both;
+} */
+
+/* DISPLAY, FLOAT, AND POSITIONING */
+/* .spanInline {
+    background-color: #0537b7;
+}
+
+.pblock {
+    background-color: #148eda;
+    width: 10rem;
+}
+
+.inlineBlock {
+    background-color: #3b5998;
+} */
+
+/* FLOAT STYLES */
+/* .float {
+    max-width: 300px;
+    margin-top: 30px;
+}
+
+.float h2 {
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+.float h4 {
+    margin-top: 5px;
+} */
+
+/* To ensure an element does not follow the previous orientation */
+/* .float p {
+    clear: both;
+} */
+
+/* FLOAT LIKE A NEWSPAPER */
+/* .jornal-float {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.img-jornal {
+    float: left;
+    margin-right: 10px;
+} */
+
+/* ORGANIZING POSTS USING FLOAT */
+/* .posts1 {
+    width: 600px;
+    margin-top: 400px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.posts1 h1 {
+    float: left;
+    margin: 0 0 20px;
+}
+
+.time-stamp {
+    background-color: #000;
+    color: #fff;
+    float: right;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding: 5px 10px;
+} */
+
+/* .posts1 p {
+    clear: both;
+}
+
+.asideblog {
+    background-color: #fffbe4;
+    border: 1px solid #c9bc8f;
+    float: right;
+    padding: 10px;
+    width: 200px;
+    margin-right: 400px;
+}
+
+.asideblog h3 {
+    margin: 0;
+}
+
+.hellodiv {
+    display: block;
+    margin-top: 20px;
+}
+
+.boxPosition{
+    background-color: papayawhip;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 5px;
+    top: 400px;
+}
+
+.notice {
+    background-color: #fff;
+    border: 1px solid #000;
+    height: 130px;
+    padding: 10px;
+    width: 380px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -200px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.containerGrid {
+    display: grid;
+    width: 610px;
+    padding: 10px;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.gridColumn {
+    margin-right: 20px;
+}
+
+.gridColumn:last-child{
+    margin-right: 0;
+}
+
+.six-columns{
+    width: 400px;
+}
+
+.three-columns{
+    box-sizing: border-box;
+    width: 190px;
+    background-color: #fffbe4;
+    border: 1px solid #c9bc8f;
+    margin-top: 20px;
+}
+
+.flexbox {
+    display: flex;
+    height: 60px;
+    width: 300px;
+}
+
+.box {
+    color: #fff;
+    display: block;
+    flex: auto;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.one {
+    background-color: #8820dd;
+}
+
+.two {
+    background-color: #2bb15a;
+}
+
+.three {
+    background-color: #755322;
+} */
+
+/* label {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 90px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input, textarea {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid #ccc;
+    box-shadow: inset 2px 2px 2px #eee;
+    font-size: 0.9em;
+    padding: 2px 5px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+}
+
+.hint {
+    background-color: #fffbe4;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+    font-size: 0.8em;
+    margin-left: 20px;
+    padding: 3px;
+}
+
+input:focus + .hint, textarea:focus + .hint {
+    display: inline-block;
+}
+
+.error {
+    color: red;
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 5px 0 0 90px;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+}
+
+button {
+    background-color: #e5e5e5;
+    background-image: linear-gradient(to bottom, #fff, #e5e5e5);
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: #000;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background-color: #285582;
+    background-image: linear-gradient(to top, #3775b3, #285582);
+    border-color: #204569;
+    color: #fff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 3px #3775b3;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);
+}
+
+button:active {
+    background-color: #204569;
+    background-image: none;
+    border-color: #1a3754;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.15);
+} */
+
+/* WORKING WITH EFFECTS */
+
+/* Transforming elements ->
+
+translate - repositions an element by moving it on the x and y axes.
+scale - resizes the element, scale(2) doubles its size.
+skew - distorts the positions of an element.
+rotate - rotates the angle of elements.
+matrix - allows executing a matrix of transformations */
+
+/* img {
+    width: 100px;
+    height: 100px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    transition: transform 0.2s linear;
+}
+
+span {
+    color: #153755;
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+}
+
+li:nth-child(even) {
+    transform: rotate(5deg);
+}
+
+li:nth-child(odd) {
+    transform: rotate(-5deg);
+}
+
+li:hover {
+    transform: scale(1.3);
+    z-index: 1;
+} */
+
+/* SKEW */
+
+/* li {
+    transform: skew(10deg, 10deg);
+} */
+
+/* li:nth-child(even) {
+    transform: translateY(10px);
+}
+
+li:nth-child(odd) {
+    transform: translateY(-10px);
+} */
+
+/* STYLE TRANSITIONS */
+
+/* 1 - transition property -> which property the transition will be applied to? (transform, opacity, all)
+2 - transition duration
+3 - transition-timing function -> how the speed should be calculated?
+4 - transition delay -> wait time before the transition. */
+
+/* 3D EFFECTS */
+
+/* 1 - translateZ
+2 - rotateX and rotateY
+3 - perspective -> manipulates the perspective of elements
+4 - matrix3d, translate3d, rotate3d -> 3D support */
+
+/* form {
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #ccc;
+    box-shadow: inset 2px 2px 2px #eee;
+    font-size: 0.9em;
+    padding: 2px 5px;
+}
+
+.container {
+    height: 300px;
+    position: relative;
+    width: 200px;
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card section {
+    backface-visibility: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.signup {
+    transform: rotateY(180deg);
+}
+
+.card .flipped {
+    transform: rotateY(180deg);
+} */
+
+/* USING ANIMATIONS: */
+
+/* we can define specific properties for animations at different stages using @keyframes */
+
+/* h1 { */
+    /* animation-name, animation-duration, animation-delay - animation-timing-function */
+    /* animation: appear 2s 0s linear;
+    color: #000;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+} */
+
+/* INFINITE ANIMATIONS */
+
+/* .loading {
+    animation: pulse 1.5s infinite;
+    background-color: #666;
+    border-radius: 50%;
+    font: 0/0 serif;
+    position: absolute;
+}
+
+@keyframes pulse {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+        top: 50px;
+        left: 50px;
+    }
+    100% {
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        top: 35px;
+        left: 35px;
+    }
+} */

@@ -26,12 +26,6 @@ Este repositório contém os exercícios do livro "HTML5 CSS3 - Domine a Web do 
 ## Capítulo 8: Efeitos 101
 - Trabalhando com animações e transições.
 
-## Capítulo 9: O Universo Fora dos Desktops e Notebooks
-- Adaptação para diferentes dispositivos.
-
-## Capítulo 10: Ferramentas
-- Frameworks, plugins e pré-processadores.
-
 ---
 
 **Instruções:**
@@ -40,3 +34,47 @@ Este repositório contém os exercícios do livro "HTML5 CSS3 - Domine a Web do 
 3. Descomente as seções de código relevantes para estudar funcionalidades específicas.
 
 Este readme serve como guia para facilitar sua jornada de aprendizado com o livro "HTML5 CSS3 - Domine a Web do Futuro". Boa sorte!
+
+
+# HTML5 CSS3 - Mastering the Web of the Future
+
+This repository contains exercises from the book "HTML5 CSS3 - Mastering the Web of the Future." Follow this step-by-step guide to study the HTML5 and CSS3 functionalities presented in the book.
+
+## Chapter 1: Web Development Today
+- Introduction to contemporary web development.
+
+## Chapter 2: The First Steps with Our Site
+- Initial setup of the site.
+
+## Chapter 3: HTML5, What Has Changed?
+- Exploration of changes brought by HTML5.
+
+## Chapter 4: What You Need to Know About CSS?
+- Essential CSS fundamentals.
+
+## Chapter 5: CSS3
+- @fontface, RGBA, gradients, box-shadow, icons.
+
+## Chapter 6: Visual Structure
+- Display, float, clearfix, position, grids, flexbox.
+
+## Chapter 7: Enhancing Your Forms
+- Improving web forms.
+
+## Chapter 8: Effects 101
+- Working with animations and transitions.
+
+## Chapter 9: The World Beyond Desktops and Notebooks
+- Adaptation for different devices.
+
+## Chapter 10: Tools
+- Frameworks, plugins, and preprocessors.
+
+---
+
+**Instructions:**
+1. Clone this repository to your local machine.
+2. Navigate to the desired chapter directory.
+3. Uncomment relevant code sections to study specific functionalities.
+
+This readme serves as a guide to facilitate your learning journey with the book "HTML5 CSS3 - Mastering the Web of the Future." Good luck!
