@@ -1,0 +1,666 @@
+* {
+    /* box-sizing: border-box; */
+    margin-left: 10px;
+}
+
+
+/* .box {
+    background-color: yellow;
+    width: 300px;
+}
+
+.paddingbox {
+    background-color: blue;
+    width: 300px;
+}
+
+section {
+    border: 1px solid #000;
+    height: 100px;
+    margin: 40px auto;
+    width: 400px;
+} */
+
+/* O left e top carregam a mini box para a posicao exata que queremos pintar */
+
+/* .h1-ba {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #990000;
+    color: #fff;
+    left: -10px;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    width: 420px;
+}
+
+.h1-ba::before{
+    border-color: transparent #7c0000 #7c0000 transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: '';
+    left: 0;
+    position: absolute;
+    top:-10px;
+}
+
+.h1-ba::after{
+    border-color: transparent transparent #7c0000 #7c0000;
+    border-style: solid;
+    border-width: 5px;
+    content: '';
+    right: 0;
+    position: absolute;
+    top:-10px;
+} */
+
+/* Decorando mensagens */
+/* Before and after te permitem adicionar elementos antes e depois do elemento decorado sem alterar o codigo html */
+/* 
+.help {
+    background-color: #f1efe6;
+    border: 1px solid #d3cdae;
+    font-size: 0.9em;
+    padding: 10px;
+    position: relative;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.help::before {
+    border-color: transparent #d3cdae transparent transparent;
+    border-style: solid;
+    border-width: 14px;
+    content: '';
+    left: -28px;
+    margin-top: -14px;
+    position: absolute;
+    top: 50%
+}
+
+.tip {
+    font-size: 30px;
+}
+.tip::before {
+    content: '\261e';
+    margin-right: 5px;
+} */
+
+/* Criando aspas em uma citaçao */
+
+/* blockquote {
+    color: #444;
+    font-style: italic;
+}
+
+blockquote::before, blockquote::after {
+    color: #000;
+    font-size: 3em;
+}
+
+blockquote::before{
+    content: '\201c';
+}
+
+blockquote::after{
+    content: '\201d';
+} */
+
+/* OOCSS */
+
+/* .button {
+    background-color: #999999;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: #389739;
+}
+
+.big-button {
+    font-size: 1.1em;
+}
+
+.small-button {
+    font-size: 0.8em;
+    background-color: #444;
+} */
+
+/* Estilos de impressao */ 
+
+/* Importante resetar algumas configuracoes e usar o important para ela sobrescrever outras na cadeia de importancia. */
+
+/* @media print {
+    *{
+        background: transparent !important;
+        border-color: #000 !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        text-shadow: none !important;
+    } */
+
+    /* links devem ser links */
+/*
+    a {
+        text-decoration: underline !important;
+    } */
+
+    /* colocar o caminho depois do a */
+
+    /* a[href]::after {
+        content: ' ('attr(href)')';
+    } */
+
+    /* remover o pseudoelemento */
+
+    /* a[href^='javascript:']::after, a[href^='#'] {
+        content: '';
+    }
+} */
+
+
+/* Controlando a quebra de paginas */
+
+/* podemos utilizar page-break, page-break-inside e page-break-before para permitir ou nao a quebra de paginas. */
+
+/* Impressao de tabelas */
+
+/* table {
+    width: 500px;
+}
+
+td {
+    border: 1px dotted #666;
+}
+
+td a {
+    color: #3b5998;
+}
+
+.expense, .profit, .actions {
+    text-align: right;
+}
+
+.expense {color: red;}
+.profit {color: green;}
+
+.actions a {
+    font-size: 0.9em;
+    color: white;
+    padding: 2px 5px;
+    background-color: #3b5998;
+    text-decoration: none;
+} */
+
+/* O QUE VOCE CONSEGUE FAZER COM CSS3? */
+/* Font face nos permite dar load em uma fonte nova */
+
+/* @font-face {
+    font-family: 'Lobster';
+    font-weight: 700;
+    src: local('Lobster'),url(lobster.woff) format('woff');
+} */
+
+/* Argumento 1 - fonte  Argumento 2 - backup fonte */
+/* .fontface {
+    font-family: 'Lobster', cursive;
+} */
+
+/* SERVICOS DE DISTRIBUICAO DE FONTES */
+
+/* .distribuicao {
+    font-family: 'Press Start 2P', cursive;
+} */
+
+/* Substituicao de icones por fontes */
+
+/* Pictos, font awesome, iconic, fontello, iicomoon, shiticons */
+/* primeiramente baixe o pacote da fonte */
+/* defina a fonte que voce quer usaar */
+
+/* @font-face {
+    font-family: 'IconFill';
+    src: url('iconfill.woff') format('woff');
+} */
+
+/* Criando uma nuvem utilizando css */
+
+/* .cloudDiv {
+    background-color: #000;
+    width: 50px;
+    height: 10px;
+    padding: 50px 100px;
+} */
+
+/* .cloud {
+    background-color: white;
+    border-radius: 48px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 48px;
+}
+
+.cloud::before, .cloud::after {
+    background-color: white;
+    border-radius: 50%;
+    content: '';
+    height: 16px;
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    top: -6px;
+}
+
+.cloud::after {
+    background-color: white;
+    border-radius: 50%;
+    content: '';
+    height: 11px;
+    position: absolute;
+    width: 10px;
+    left: 26px;
+    top: -4px;
+} */
+
+/* Lista gradiente de cores */
+
+/* .listbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 32rem;
+    height: 40px;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ccc;
+    color: white;
+    list-style: none;
+    text-align: center;
+} */
+
+/* .lista {
+    width: 8rem;
+    margin: 0;
+    text-align: center;
+    color: black;
+    line-height: 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.lista:last-child {
+    border-right: none;
+} */
+
+/* gradiente de cores [direcao][cor inicio][cor final] */
+
+/* .gradiente1 {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #4377fa, #0537b7);
+}
+
+.gradiente2 {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #0537b7, #4377fa);
+}
+
+.gradiente3 {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #fc0050, #ff79a3);
+}
+
+.gradiente4 {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom left, #f5b951 48%, #f2a31c 56%);
+} */
+
+/* Sombras e menus elegantes */
+
+/* .help1 {
+    box-shadow: 3px 3px 3px #aaa;
+}
+
+.help2 {
+    box-shadow: -3px -3px 3px #aaa;
+} */
+
+/* sombra interna */
+/* .help3 {box-shadow: 3px 3px 3px #aaa inset;} */
+
+/* brilho ao redor 0 0  */
+/* .inputsombra {
+    width: 30rem;
+    height: 10rem;
+    margin-bottom: 4rem;
+}
+
+.inputsombra:focus {
+    box-shadow: 0 0 5px #35861b;
+    outline: none;
+} */
+
+/* Navegacao com efeitos de sombra */
+/* Podemos colocar efeitos nos textos utilizando o mesmo principio porem com text-shadow */
+
+/* .nav {
+    background-color: #b9522d;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 5rem;
+    list-style: none;
+    width: 18rem;
+    padding: 0;
+}
+
+.nav li{
+    font-weight: bold;
+    height: 5rem;
+    line-height: 5rem;
+    width: 6rem;
+    margin: 0;
+}
+
+.nav a {
+    color:white;
+}
+
+.nav li:hover {
+    background-color: #a64a28;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+} */
+
+/* Combinando tudo em um article section */
+
+/* .book {
+    margin-top: 7rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    max-width: 60rem;
+    height: 12rem;
+    padding: 10px 10px;
+    background-color: #fafafa;
+    background-image: linear-gradient(#fafafa,#eee);
+}
+
+.book header{}
+
+.bookh1{
+    color: #bd2c00;
+    font-size: 1.2em;
+    margin:0;
+}
+
+.bookh2{
+    font-size: 1em;
+    margin:5px 0;
+}
+
+.available{
+    background-color: #6cc644;
+    border-radius: 3px;
+    color:white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 7px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+    margin:0;
+}
+
+.bookUl{
+    background-color: #56b4ef;
+    background-image: linear-gradient(to bottom, #56b4ef,#148eda);
+    float: left;
+    list-style: none;
+    margin: 25px 10px 0 0;
+    padding: 0;
+    text-align: left;
+    /* width: 230px; */
+/* } */
+
+/* @font-face {
+    font-family: 'IconicFill';
+    src: url('iconic_fill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon::before{
+    font-family: 'IconicFill';
+    margin: 0px 5px;
+}
+
+.paper::before{
+    content: '\e00b';
+}
+
+.digital::before{
+    content: '\e044';
+}
+
+.package::before{
+    content: '\e022';
+}
+
+.icon {
+    color: #fff;
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+}
+
+.icon:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bookLi{
+    margin: 0;
+}
+
+.bookLi a{
+    margin: 0;
+}
+
+.book p {} */
+
+/* .clear {
+    clear: both;
+}  */
+
+/* DISPLAY, FLOAT E POSITION: */
+
+/* .spanInline {
+    background-color: #0537b7;
+}
+
+.pblock {
+    background-color: #148eda;
+    width: 10rem;
+}
+
+.inlineBlock {
+    background-color: #3b5998;
+} */
+
+/* FLOAT */
+
+/* .float {
+    max-width: 300px;
+    margin-top: 30px;
+}
+
+.float h2 {
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+.float h4 {
+    margin-top: 5px;
+} */
+
+/* Para garantir que um elemento nao va seguir a orientacao anterior: */
+/* .float p {
+    clear:both;
+} */
+
+/* Float como se fosse um jornal: */
+
+/* .jornal-float {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.img-jornal {
+    float: left;
+    margin-right: 10px;
+} */
+
+/* Organizacao de posts utilizando o float: */
+
+/* .posts1{
+    width: 600px;
+    margin-top: 400px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.posts1 h1 {
+    float:left;
+    margin: 0 0 20px;
+}
+
+.time-stamp {
+    background-color: #000;
+    color: #fff;
+    float: right;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.posts1 p {
+    clear: both;
+}
+
+.asideblog {
+    background-color: #fffbe4;
+    border: 1px solid #c9bc8f;
+    float: right;
+    padding: 10px;
+    width: 200px;
+    margin-right: 400px;
+}
+
+.asideblog h3 {
+    margin: 0;
+}
+
+/* .posts1 {
+    clear: both;
+}
+
+.asideblog {
+    clear: both;
+}
+
+.time-stamp {
+    clear: both;
+} */
+
+/* .hellodiv {
+    display: block;
+    margin-top: 20px;
+}  */
+/* CLEARFIX */
+
+/* POSITION */
+/* quando utilizamos absolute, o elemento é posicionado em relacao ao elemento pai */
+
+/* .boxPosition{
+    background-color: papayawhip;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 5px;
+    top: 400px;
+} */
+
+/* JANELA MODAL - vamos coloca-la no meio da tela */
+
+/* .notice {
+    background-color: #fff;
+    border: 1px solid #000;
+    height: 130px;
+    padding: 10px;
+    width: 380px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin: -75px 0 0 -200px;
+    /* z-index: 1; */
+/* } */
+
+/* Ative o overlay e o z index se quiser testar a funcionalidade dos mesmos. */
+
+/* .overlay {
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+} */
+
+/* TRABALHANDO UTILIZANDO GRID */
+
+/* .containerGrid {
+    display: grid;
+    width: 610px;
+    padding: 10px;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.gridColumn {
+    margin-right: 20px;
+}
+
+.gridColumn:last-child{
+    margin-right: 0;
+}
+
+.six-columns{
+    width: 400px;
+}
+
+.three-columns{
+    box-sizing: border-box;
+    width: 190px;
+    background-color: #fffbe4;
+    border: 1px solid #c9bc8f;
+    margin-top: 20px;
+} */
+
+/* ELEMENTOS FLEXIVEIS UTILIZANDO FLEXBOX */
+
+
