@@ -1,17 +1,42 @@
-Follow this code step by step and these are all the exercises from the book HTML5 CSS3 - Domine a web do futuro.
+# HTML5 CSS3 - Domine a Web do Futuro
 
-You can uncomment each section so it's a good way to study HTML5 and CSS3 functionalities.
+Este repositório contém os exercícios do livro "HTML5 CSS3 - Domine a Web do Futuro". Siga este guia passo a passo para estudar as funcionalidades do HTML5 e CSS3 apresentadas no livro.
 
-CHAPTER 1 -> Desenvolvimento web hoje
+## Capítulo 1: Desenvolvimento Web Hoje
+- Introdução ao desenvolvimento web contemporâneo.
 
-CHAPTER 2 -> Os primeiros passos com o nosso site
+## Capítulo 2: Os Primeiros Passos com o Nosso Site
+- Configuração inicial do site.
 
-CHAPTER 3 -> HTML5, o que mudou?
+## Capítulo 3: HTML5, O Que Mudou?
+- Exploração das mudanças trazidas pelo HTML5.
 
-CHAPTER 4 -> O que voce precisa saber sobre css?
+## Capítulo 4: O Que Você Precisa Saber Sobre CSS?
+- Fundamentos essenciais do CSS.
 
-CHAPTER 5 -> CSS3 (@fontface, RGBA, gradients, box-shadow, icons)
+## Capítulo 5: CSS3
+- - @fontface, RGBA, gradients, box-shadow, icons.
 
-CHAPTER 6 -> Estrutura visual (display, float, cleafix, position, grids, flexbox)
+## Capítulo 6: Estrutura Visual
+- Display, float, clearfix, position, grids, flexbox.
 
-CHAPTER 7 ->
+## Capítulo 7: Melhorando Seus Formulários
+- Aprimoramento de formulários web.
+
+## Capítulo 8: Efeitos 101
+- Trabalhando com animações e transições.
+
+## Capítulo 9: O Universo Fora dos Desktops e Notebooks
+- Adaptação para diferentes dispositivos.
+
+## Capítulo 10: Ferramentas
+- Frameworks, plugins e pré-processadores.
+
+---
+
+**Instruções:**
+1. Clone este repositório em sua máquina local.
+2. Navegue para o diretório do capítulo desejado.
+3. Descomente as seções de código relevantes para estudar funcionalidades específicas.
+
+Este readme serve como guia para facilitar sua jornada de aprendizado com o livro "HTML5 CSS3 - Domine a Web do Futuro". Boa sorte!
